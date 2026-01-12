@@ -5,20 +5,20 @@
 class CgaMcp < Formula
   desc "CGA Master Control Program (MCP) CLI"
   homepage "https://github.com/codegenapps/cga-mcp"
-  version "0.1.7"
+  version "0.1.8"
 
   on_macos do
     on_intel do
-      url "https://github.com/codegenapps/cga-mcp-releases/releases/download/v0.1.7/cga-mcp_0.1.7_darwin_amd64.tar.gz"
-      sha256 "fe1af49040d77efe3b3de661ef0e133a3bbc1d89254d2e07bb148f818f23323d"
+      url "https://github.com/codegenapps/cga-mcp-releases/releases/download/v0.1.8/cga-mcp_0.1.8_darwin_amd64.tar.gz"
+      sha256 "1d2bed33f53d00fea14f86c7752f4fb5eadc3eaec6110974cf2cd7699c41d14f"
 
       def install
         bin.install "cga-mcp"
       end
     end
     on_arm do
-      url "https://github.com/codegenapps/cga-mcp-releases/releases/download/v0.1.7/cga-mcp_0.1.7_darwin_arm64.tar.gz"
-      sha256 "c1215f7190fdd597f0be6c9c5eee16094570cedf42428e97f4da06fc414a4965"
+      url "https://github.com/codegenapps/cga-mcp-releases/releases/download/v0.1.8/cga-mcp_0.1.8_darwin_arm64.tar.gz"
+      sha256 "68d4ba8cd2ff0f778eb37b3cbc93e4a52e179841aec87f666560df222c0ea5b2"
 
       def install
         bin.install "cga-mcp"
@@ -29,8 +29,8 @@ class CgaMcp < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/codegenapps/cga-mcp-releases/releases/download/v0.1.7/cga-mcp_0.1.7_linux_amd64.tar.gz"
-        sha256 "487808d539aba5c06c4351f53f8e7771425c6ab7432a1d359dff896dff81585e"
+        url "https://github.com/codegenapps/cga-mcp-releases/releases/download/v0.1.8/cga-mcp_0.1.8_linux_amd64.tar.gz"
+        sha256 "12732616260f39a8c00354b4b0be0efa52526a773169f95593f15e0dbace062e"
 
         def install
           bin.install "cga-mcp"
@@ -39,8 +39,8 @@ class CgaMcp < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/codegenapps/cga-mcp-releases/releases/download/v0.1.7/cga-mcp_0.1.7_linux_arm64.tar.gz"
-        sha256 "a2b2866770437d33acce6975e5d756e50426aa6067663b25e48e5259df7da020"
+        url "https://github.com/codegenapps/cga-mcp-releases/releases/download/v0.1.8/cga-mcp_0.1.8_linux_arm64.tar.gz"
+        sha256 "cd3af97fde94e9bbd768a91dbbd6e86750bf9d70553be0a055956a3cdc94be85"
 
         def install
           bin.install "cga-mcp"
