@@ -5,20 +5,20 @@
 class CgaMcp < Formula
   desc "CGA Master Control Program (MCP) CLI"
   homepage "https://github.com/codegenapps/cga-mcp"
-  version "1.0.0"
+  version "1.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/codegenapps/cga-mcp-releases/releases/download/v1.0.0/cga-mcp_1.0.0_darwin_amd64.tar.gz"
-      sha256 "5f49272bf116b6d38bf4d5b5bac1b88ad8f353195b2201ee6d9ffb07c8b2c75f"
+      url "https://github.com/codegenapps/cga-mcp-releases/releases/download/v1.1.0/cga-mcp_1.1.0_darwin_amd64.tar.gz"
+      sha256 "042268b58b9c7222292eb462816e176495fba284691214c506e2e3aba29612f3"
 
       define_method(:install) do
         bin.install "cga-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/codegenapps/cga-mcp-releases/releases/download/v1.0.0/cga-mcp_1.0.0_darwin_arm64.tar.gz"
-      sha256 "8b3422ca80675dc3f322c8770f2987e33820a14c7d3c7f2dde192075acdbc20e"
+      url "https://github.com/codegenapps/cga-mcp-releases/releases/download/v1.1.0/cga-mcp_1.1.0_darwin_arm64.tar.gz"
+      sha256 "4ab27aaeef2c82648f4f4f3bad4c225cd84c88f6689e1f9e90d211b22d1d6008"
 
       define_method(:install) do
         bin.install "cga-mcp"
@@ -28,15 +28,15 @@ class CgaMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codegenapps/cga-mcp-releases/releases/download/v1.0.0/cga-mcp_1.0.0_linux_amd64.tar.gz"
-      sha256 "c8d6bebdadadcacaa8c3947d35fb93546d9fdb6734d63cf5bb2a8acf2baa9f55"
+      url "https://github.com/codegenapps/cga-mcp-releases/releases/download/v1.1.0/cga-mcp_1.1.0_linux_amd64.tar.gz"
+      sha256 "6f543b1ceaff8dd49a23306f06f3a16e89543b1b84cae906559cd1c027e6adc8"
       define_method(:install) do
         bin.install "cga-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codegenapps/cga-mcp-releases/releases/download/v1.0.0/cga-mcp_1.0.0_linux_arm64.tar.gz"
-      sha256 "e6f44252b66e6a246164d771d42c8b18ddd4b91167f6467cb8bea18d866f6491"
+      url "https://github.com/codegenapps/cga-mcp-releases/releases/download/v1.1.0/cga-mcp_1.1.0_linux_arm64.tar.gz"
+      sha256 "b783fc3c9dea7cb404482038b077630d3d22db73a959a454ab2d13950b2d189b"
       define_method(:install) do
         bin.install "cga-mcp"
       end
